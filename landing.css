@@ -1,0 +1,27 @@
+body{
+	background: url(https://images.unsplash.com/photo-1575318634028-6a0cfcb60c59?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60);
+	background-size: cover;
+	background-position: center;
+	font-family: lobster;
+}
+html{
+	height: 100%
+}
+.content{
+	text-align: center;
+	padding-top: 25%;
+	text-shadow: 0px 2px 3px red;
+
+}
+.col{
+	color: #fff;
+}
+h1{
+	font-size: 5em;
+	font-weight: 700;
+}
+hr{
+	width: 400px;
+	border-top: 1px solid white;
+	border-bottom: 2px solid rgba(0 0 0 0.5);
+}
