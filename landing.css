@@ -1,27 +1,136 @@
 body{
-	background: url(https://images.unsplash.com/photo-1575318634028-6a0cfcb60c59?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60);
-	background-size: cover;
-	background-position: center;
+	height: 100%;
 	font-family: lobster;
 }
-html{
-	height: 100%
+
+nav{
+	box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.4);
 }
+
+
+
 .content{
 	text-align: center;
-	padding-top: 25%;
-	text-shadow: 0px 2px 3px red;
-
+	padding-top: 15rem;
+	text-shadow: 0px 4px 5px black;
+	background-image: url(desola.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	height: 45rem;
 }
-.col{
+
+.content:hover{
+	background-image: url(glenn.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	transition: ease-in-out;
+	transition-duration: 500ms;
+}
+.content .col{
 	color: #fff;
 }
-h1{
+
+.content h1{
 	font-size: 5em;
 	font-weight: 700;
 }
-hr{
+
+.content hr{
 	width: 400px;
 	border-top: 1px solid white;
 	border-bottom: 2px solid rgba(0 0 0 0.5);
 }
+
+.first-layer {
+	margin-top: 3rem;
+	text-align: center;
+	line-height: 2.5rem;
+}
+
+.user, .kids, .company{
+	transition:linear;
+	transition-duration: 500ms;
+	border-radius: 50px;
+	padding: 40px;
+}
+
+.user:hover, .kids:hover, .company:hover{
+	background-color: black;
+	color: white;
+	cursor: pointer;
+}
+
+.second-layer{
+	margin-top: 5rem;
+}
+
+.second-layer-image{
+
+}
+
+.second-layer-image img{
+	height: 20rem;
+}
+
+.second-layer-text{
+	line-height: 2rem;
+	text-align: justify;
+	padding-top: 4rem;
+	text-align: justify;
+}
+.second-layer-text button{
+	border-radius: 30px;
+	border: noneS;
+}
+
+.second-layer-text button a{
+	color: black;
+}
+.third-layer{
+	margin-top: 5rem;
+}
+
+.third-layer h2{
+	margin-bottom: 2rem;
+}
+
+.third-layer div{
+	padding: 10px;
+}
+
+.third-layer-image{
+
+}
+
+.third-layer-image img{
+	height: 30rem;
+	width: 20rem;
+	object-fit: cover;
+	padding: 10px;
+}
+
+.fourth-layer{
+	text-align: center;
+	margin-top: 50px;
+}
+
+.fourth-layer-jobs, .fourth-layer-courses, .fourth-layer-students{
+	padding: 15px;
+}
+
+footer{
+	text-align: center;
+	margin-top: 7rem;
+	background-color: black;
+	padding-top: 3rem;
+	padding-bottom: 2rem;
+}
+
+.social-media p{
+	cursor: pointer;
+}
+
+.social-media img{
+	height: 1.5rem;	
+}
+
