@@ -1,3 +1,7 @@
+<?php
+    include_once("header.php");
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,7 +18,7 @@
   <script src="jquery-3.6.0.min.js"></script>
 </head>
 <body>
-  <h1 id="boozy"><a href="index.html">Boozy!</a></h1>
+ 
     <form>
         <div class="container">
             <h1>Contact Us</h1>
@@ -74,3 +78,7 @@
 
 </body>
 </html>
+
+<?php
+    include_once("footer.php");
+?>
