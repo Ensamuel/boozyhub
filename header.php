@@ -19,7 +19,7 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container">
       <a class="navbar-brand" href="index.php">Boozy!</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -49,7 +49,7 @@
         <ul class="navbar-nav navbar-right">
 
           <li class="nav-item">
-            <a class="nav-link" href="apply.php">Send Your Application<i class="fa fa-user-plus"></i></a>
+            <a class="nav-link" href="login.php">login<i class="fa fa-user-plus"></i></a>
           </li>
         </ul>
 

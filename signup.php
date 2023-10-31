@@ -1,4 +1,41 @@
 <?php
+require('connection.php');
+
+if (isset($_POST["signup"])) {
+
+    $username = $_POST['username'];
+    $password = $_POST['password'];
+    $firstname = $_POST['firstname'];
+    $lastname = $_POST['lastname'];
+    $email = $_POST['email'];
+
+
+
+    $sql = "SELECT * FROM boozy_hub where username = '$username' or email = '$email'";
+    $result = mysqli_query($conn, $sql);
+
+    if (mysqli_num_rows($result) > 0) {
+        echo '<h3> This user exists</h3>';
+    } else {
+        $sql = "INSERT INTO boozy_hub (username, password, firstname, lastname, email)
+    
+    VALUES('$username','$password', '$firstname', '$lastname', '$email' )";
+
+        $result = mysqli_query($conn, $sql);
+
+        if($result){
+            echo '<h3>success</h3>';
+        }else{
+            echo 'failed';
+        }
+    }
+} else {
+    echo 'not posted';
+}
+?>
+
+
+<?php
 include_once("header.php");
 ?>
 
@@ -12,71 +49,36 @@ include_once("header.php");
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-    <link rel="stylesheet" type="text/css" href="contact.css">
 
-    <title>Contact Us</title>
+    <title>Signup</title>
 
     <script src="jquery-3.6.0.min.js"></script>
 </head>
 
 <body>
-    <h1 id="boozy"><a href="index.html">Boozy!</a></h1>
-    <form>
+    <form action="signup.php" method="POST" class="form-container">
         <div class="container">
-            <h1>Contact Us</h1>
-            <div class="form-container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <input type="text" name="user-name" id="user-name" placeholder="Name">
+            <br />
+            <h1>Sign Up</h1>
 
-                        <input type="text" name="email" id="email" placeholder="email">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-12">
-                        <input type="number" name="phone-number" id="phone-number" placeholder="phone number">
-                        <input type="text" name="Subject" id="Subject" placeholder="Enter Subject">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-12">
-                        <textarea name="Message" id="Message" placeholder="type in your message" style="resize: none;"></textarea>
-                    </div>
-                </div>
-                <button type="submit"> Send A Message</button>
-            </div>
+            <input type="text" name="firstname" id="user-name" placeholder="first name" required><br />
+
+            <input type="text" name="lastname" id="email" placeholder="lastname" required><br />
+
+            <input type="text" name="username" id="username" placeholder="username" required><br />
+           
+            <input type="email" name="email" id="email" placeholder="Enter email"><br />
+
+            <input type="password" name="password" id="password" placeholder='password' required><br />
+
+            <input type="submit" value="signup" name="signup">
+
+            <p>have account? <a href="login.php">login</a></p>
+
         </div>
     </form>
 
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-4">
-                    <h4>Boozy!</h4>
-                    <p>25, Orona Street, Oshodi, Lagos State, Nigeria</p>
-                </div>
-                <div class="col-sm-4">
-                    <h4>Information</h4>
-                    <p>About Us</p>
-                    <p>Courses</p>
 
-                </div>
-                <div class="col-sm-4 social-media">
-                    <h4>Social Media Links</h4>
-                    <p><img src="images/facebook.png" alt="">Facebook</p>
-                    <p><img src="images/twitter.png" alt="">Twitter</p>
-                    <p><img src="images/instagram.png" alt="">Instagram</p>
-                    <p> <img src="images/youtube.png" alt="">YouTube</p>
-                </div>
-
-            </div>
-        </div>
-    </footer>
-    <script>
-        document.querySelector('button').addEventListener('click', () => {
-            alert("We'll get back to you ASAP")
-        })
-    </script>
     <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 
 

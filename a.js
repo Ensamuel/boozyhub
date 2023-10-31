@@ -1,4 +1,4 @@
-var students = document.querySelector('#students');
+/*var students = document.querySelector('#students');
 
 
 var i = 0;
@@ -34,4 +34,6 @@ var job = setInterval(()=>{
     clearInterval(job)
   }
 }, 300);
+
+*/
 
