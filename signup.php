@@ -69,6 +69,7 @@ include_once("header.php");
            
             <input type="email" name="email" id="email" placeholder="Enter email"><br />
 
+
             <input type="password" name="password" id="password" placeholder='password' required><br />
 
             <input type="submit" value="signup" name="signup">

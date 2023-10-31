@@ -46,30 +46,8 @@
         </div>
     </form>
 
-    <footer>
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-4">
-              <h4>Boozy!</h4>
-              <p>25, Orona Street, Oshodi, Lagos State, Nigeria</p>
-            </div>
-            <div class="col-sm-4">
-              <h4>Information</h4>
-              <p>About Us</p>
-              <p>Courses</p>
-            
-            </div>
-            <div class="col-sm-4 social-media">
-              <h4>Social Media Links</h4>
-              <p><img src="images/facebook.png" alt="">Facebook</p>
-              <p><img src="images/twitter.png" alt="">Twitter</p>
-              <p><img src="images/instagram.png" alt="">Instagram</p>
-             <p> <img src="images/youtube.png" alt="">YouTube</p>
-            </div>
-            
-          </div>
-        </div>
-      </footer>
+
+     
  <script>
   document.querySelector('button').addEventListener('click', ()=>{alert("We'll get back to you ASAP")})
  </script>   
