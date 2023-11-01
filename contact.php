@@ -5,17 +5,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
-
-	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
-	<link rel="stylesheet" type="text/css" href="contact.css">
-
+    
     <title>Contact Us</title>
 
-  <script src="jquery-3.6.0.min.js"></script>
 </head>
 <body>
  
@@ -44,14 +36,7 @@
                 <button type="submit"> Send A Message</button>
             </div>
         </div>
-    </form>
-
-
-     
- <script>
-  document.querySelector('button').addEventListener('click', ()=>{alert("We'll get back to you ASAP")})
- </script>   
-<script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    </form>  
 
 
 </body>

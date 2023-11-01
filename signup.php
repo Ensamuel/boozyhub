@@ -30,7 +30,7 @@ if (isset($_POST["signup"])) {
         }
     }
 } else {
-    echo 'not posted';
+    echo 'not signup yet';
 }
 ?>
 
@@ -43,16 +43,11 @@ include_once("header.php");
 <html lang="en">
 
 <head>
-    <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
+    
 
     <title>Signup</title>
 
-    <script src="jquery-3.6.0.min.js"></script>
+    
 </head>
 
 <body>
@@ -79,8 +74,6 @@ include_once("header.php");
         </div>
     </form>
 
-
-    <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 
 
 </body>

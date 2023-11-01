@@ -1,23 +1,32 @@
-#web-development{
+#web-development {
    display: none;
 }
 
-#ux-design{
+
+
+#no-course {
    display: none;
 }
 
-#no-course{
+
+
+#web-dev,
+#devops, #dev-ops, #web-development {
    display: none;
+   border-radius: 20px;
+   padding: 30px;
+   border: 1px solid black;
+   margin: 20px;
+   text-align: center;
 }
 
-#cloud-engineering{
-   display: none;
-}
 
-#web-dev{
-   display: none;
-}
 
-#ux-des{
-   display: none;
+.web-body,
+.devops-body {
+   border-radius: 20px;
+   padding: 30px;
+   border: 1px solid black;
+   margin: 20px;
+   text-align: center;
 }

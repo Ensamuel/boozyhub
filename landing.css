@@ -13,14 +13,14 @@ nav{
 	text-align: center;
 	padding-top: 15rem;
 	text-shadow: 0px 4px 5px black;
-	background-image: url(desola.jpg);
+	background-image: url('images/desola.jpg');
 	background-size: cover;
 	background-attachment: fixed;
 	height: 45rem;
 }
 
 .content:hover{
-	background-image: url(glenn.jpg);
+	background-image: url('images/glenn.jpg');
 	background-size: cover;
 	background-attachment: fixed;
 	transition: ease-in-out;
